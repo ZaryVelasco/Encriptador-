@@ -1,0 +1,110 @@
+/* Estilos globales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f4f6; /* Fondo suave y claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    margin: 0; /* Sin márgenes */
+    color: #333; /* Color de texto principal */
+}
+
+h1 {
+    color: #4a90e2; /* Color azul suave para el título */
+    margin-bottom: 20px; /* Espaciado inferior */
+    font-size: 2rem; /* Tamaño de fuente */
+}
+
+h2 {
+    color: #333; /* Color de texto oscuro para el subtítulo */
+    font-size: 1.5rem; /* Tamaño de fuente */
+}
+
+/* Contenedor principal */
+.app-container {
+    background-color: #fff; /* Fondo blanco */
+    padding: 30px; /* Relleno interno */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    width: 80%; /* Ancho relativo al contenedor */
+    max-width: 800px; /* Ancho máximo */
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+/* Estilo para los paneles */
+.panels {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre los paneles */
+    flex-direction: column; /* Coloca los paneles uno debajo del otro */
+    gap: 20px; /* Espacio entre los paneles */
+}
+
+.input-panel, .output-panel {
+    background-color: #e3f2fd; /* Fondo azul claro */
+    padding: 20px; /* Relleno interno */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    text-align: left; /* Alineación de texto a la izquierda */
+}
+
+/* Estilo para el área de texto */
+textarea {
+    width: 100%; /* Ancho completo */
+    height: 120px; /* Altura fija */
+    padding: 15px; /* Relleno interno */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid #4a90e2; /* Borde azul */
+    font-size: 16px; /* Tamaño de fuente */
+    resize: none; /* Sin posibilidad de redimensionar */
+    margin-bottom: 15px; /* Espacio inferior */
+}
+
+/* Estilo para los botones */
+.buttons {
+    display: flex;
+    justify-content: space-around; /* Distribuye el espacio de manera uniforme */
+    gap: 10px; /* Espacio entre botones */
+}
+
+button {
+    background-color: #4a90e2; /* Color de fondo azul */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 15px 25px; /* Relleno interno */
+    border-radius: 50px; /* Bordes redondeados grandes */
+    cursor: pointer; /* Cursor en forma de mano */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s, transform 0.3s; /* Transición para efectos */
+}
+
+button:hover {
+    background-color: #357ABD; /* Cambio de color al pasar el ratón */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+/* Estilo para el texto de salida */
+#outputText {
+    background-color: #fff; /* Fondo blanco */
+    padding: 15px; /* Relleno interno */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid #4a90e2; /* Borde azul */
+    word-wrap: break-word; /* Permite el salto de palabra */
+    min-height: 50px; /* Altura mínima */
+    margin-top: 10px; /* Espacio superior */
+}
+
+/* Estilo para el botón de copiar */
+#copyBtn {
+    background-color: #2ecc71; /* Fondo verde */
+    margin-top: 20px; /* Espacio superior */
+    padding: 10px 20px; /* Relleno interno */
+    border-radius: 50px; /* Bordes redondeados grandes */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: background-color 0.3s, transform 0.3s; /* Transición para efectos */
+}
+
+#copyBtn:hover {
+    background-color: #27ae60; /* Cambio de color al pasar el ratón */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
